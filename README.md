@@ -1,6 +1,6 @@
 # Web3
 
-Deployment of the simple contract with constructor with arguments using Web3.js, truffle, ropsten and truffle-hdwallet-provider
+Deployment of the simple contract with constructor with arguments using Web3.js, truffle, ropsten, infura and truffle-hdwallet-provider
 
 https://ropsten.etherscan.io/
 
