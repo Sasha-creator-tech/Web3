@@ -11,3 +11,5 @@ Code in app.js
 See the screenshot of the deployment at ./Screenshot_9.png
 
 token_controller.js - Mint token by using web3.js
+
+method getBalanceOf take 3 parametres: abi of the contract you want to use functions of, contract of the address and contracts of the token holders.
