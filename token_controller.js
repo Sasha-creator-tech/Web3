@@ -61,7 +61,7 @@ const getBalanceOf = async(abiContr, contractAddress, holderAddress) => {
 	var contract = new web3.eth.Contract(JSON.parse(abiContr), contractAddress);
 	for (var i = 0; i < holderAddress.length; i++) {
 		var balance = await contract.methods.balanceOf(holderAddress[i]).call();
-    	console.log('Balance of address :' + holderAddress[i] + ' is: ' + balance + "\n----------------");
+    		console.log('Balance of address :' + holderAddress[i] + ' is: ' + balance + "\n----------------");
 	}
 };
 
@@ -70,7 +70,7 @@ getBalanceOf(
 	'[{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"spender","type":"address"},{"name":"value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"from","type":"address"},{"name":"to","type":"address"},{"name":"value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balanceOf","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"to","type":"address"},{"name":"value","type":"uint256"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"address"}],"name":"allowance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"owner","type":"address"},{"indexed":true,"name":"spender","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Approval","type":"event"}]',
 	//put here address of the contract
 	'0xE1E545c89F3996Cf06E1f12C6D05e3412c7C7b11',
-	//put here addresses of the holder to get balance of
+	//put here addresses of the holders to get balance of
  	['0x635a615769f044eaba81f7ae9797d9901a5b09e5',
  	'0xf46d9ea493a8ef92149e56170f7dfb5ca40a9fa7',
  	'0xb369a917ec78f5e5bda3c029dde3f8f9653e5ee3',
